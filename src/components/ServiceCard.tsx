@@ -1,18 +1,18 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-interface ServiceCardProps {
-  id: number;               // Service id for navigation
+interface ServiceCardProps {             // Service id for navigation
   icon: React.ReactNode;    // Icon component or element
   title: string;            // Service title
-  description: string;      // Short description
+  description: string;   
+  id:number;   // Short description
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ id, icon, title, description }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({  icon, title, description,id }) => {
   const navigate = useNavigate();
 
   const handleLearnMoreClick = () => {
-    navigate(`/service/${id}`);  // Navigate to service detail page with service id
+    navigate(`/service?id=${id}`);  // Navigate to service detail page with service id
   };
 
   return (

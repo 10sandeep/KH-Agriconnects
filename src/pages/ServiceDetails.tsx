@@ -3,15 +3,23 @@ import { useParams } from 'react-router-dom';
 import { services } from '../content/Services';
 
 const ServiceDetail: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
-  const service = services.find((s) => s.id === parseInt(id || '0'));
+  console.log('ServiceDetail component rendered');
+const url = new URL(window.location.href);
+const params = new URLSearchParams(url.search);
+const id = params.get('id');
+  console.log("params is",params);
+  console.log("id is",id);
+  console.log(services);
+const service = services.find((service) => service.id.toString() === id);
+console.log("service is",service);
 
   if (!service) {
-    return <div className="text-center text-red-500 mt-10">Service not found.</div>;
+    return <div className="text-center text-red-500 mt-20">Service not found.</div>;
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-8">
+    <div className="max-w-4xl mx-auto p-8 mt-16">
+     
       <h1 className="text-3xl font-bold text-green-700 mb-4">{service.title}</h1>
       <img src={service.image} alt={service.title} className="w-full h-64 object-cover rounded-lg mb-6" />
 

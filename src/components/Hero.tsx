@@ -67,43 +67,43 @@ const Hero = () => {
 
       {/* Main Content Container */}
       <div 
-        className="container mx-auto px-4 z-10 text-white relative"
+        className="container mx-auto px-4 z-10 text-white relative pt-16 md:pt-0"
         style={{ opacity: scrollOpacity }}
       >
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col items-center text-center">
             {/* Logo and Company Name */}
             <div className={`transition-all duration-1000 transform ${loaded ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-              <div className="inline-flex items-center justify-center mb-6">
+              <div className="inline-flex items-center justify-center mb-6 mt-16 md:mt-0">
                 <div className="relative mr-4">
-                  <Tractor className="h-12 w-12 text-green-500 z-10 relative" />
+                  <Tractor className="h-10 w-10 md:h-12 md:w-12 text-green-500 z-10 relative" />
                   <div className="absolute -inset-1 bg-green-500 rounded-full filter blur-md opacity-30"></div>
                 </div>
-                <div className="h-10 w-px bg-green-500/30 mx-4"></div>
-                <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+                <div className="h-10 w-px bg-green-500/30 mx-2 md:mx-4"></div>
+                <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
                   <span className="text-green-500">KH</span> AGRICONNECTS
                 </h1>
               </div>
             </div>
             
             {/* Tagline with Typing Effect */}
-            <div className="relative mb-8 mt-2">
-              <h2 className="text-2xl md:text-3xl font-medium text-green-200 tracking-wide">
+            <div className="relative mb-6 md:mb-8 mt-2">
+              <h2 className="text-xl md:text-3xl font-medium text-green-200 tracking-wide">
                 <span>{typedText}</span>
                 <span className={`inline-block w-1 ml-1 bg-green-400 ${typingComplete ? 'animate-pulse' : 'animate-blink'}`}>&nbsp;</span>
               </h2>
             </div>
             
             {/* Decorative Separator */}
-            <div className="flex items-center justify-center w-full mb-8">
-              <div className="h-px bg-gradient-to-r from-transparent via-green-500/50 to-transparent w-32"></div>
+            <div className="flex items-center justify-center w-full mb-6 md:mb-8">
+              <div className="h-px bg-gradient-to-r from-transparent via-green-500/50 to-transparent w-24 md:w-32"></div>
               <div className="mx-4 h-2 w-2 rounded-full bg-green-500"></div>
-              <div className="h-px bg-gradient-to-r from-green-500/50 via-green-500/50 to-transparent w-32"></div>
+              <div className="h-px bg-gradient-to-r from-green-500/50 via-green-500/50 to-transparent w-24 md:w-32"></div>
             </div>
             
             {/* Main Description */}
             <div className={`max-w-3xl mx-auto transition-all duration-1000 delay-300 ${typingComplete ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-              <p className="text-lg md:text-xl font-light leading-relaxed text-gray-100">
+              <p className="text-base md:text-xl font-light leading-relaxed text-gray-100">
                 We are a sustainable agricultural solutions provider passionate about transforming rural livelihoods. 
                 Rooted in innovation, driven by collaboration, and guided by sustainability, we deliver end-to-end farm 
                 mechanization and market-linkage services to empower farmers, agri-entrepreneurs, and communities.
@@ -111,14 +111,14 @@ const Hero = () => {
             </div>
             
             {/* CTA Buttons */}
-            <div className={`mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center transition-all duration-1000 delay-500 ${typingComplete ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+            <div className={`mt-8 md:mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center transition-all duration-1000 delay-500 ${typingComplete ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <a 
                 href="#services" 
                 onClick={(e) => {
                   e.preventDefault();
                   document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-all duration-300 shadow-lg hover:shadow-green-600/20 flex items-center justify-center group cursor-pointer"
+                className="px-6 md:px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-all duration-300 shadow-lg hover:shadow-green-600/20 flex items-center justify-center group cursor-pointer"
               >
                 <span>Discover Our Services</span>
                 <ChevronDown className="ml-2 h-5 w-5 group-hover:translate-y-1 transition-transform" />
@@ -129,7 +129,7 @@ const Hero = () => {
                   e.preventDefault();
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="px-8 py-3 bg-transparent border-2 border-white/30 hover:border-white/60 text-white font-medium rounded-lg transition-all duration-300 cursor-pointer"
+                className="px-6 md:px-8 py-3 bg-transparent border-2 border-white/30 hover:border-white/60 text-white font-medium rounded-lg transition-all duration-300 cursor-pointer"
               >
                 Contact Us
               </a>
@@ -140,7 +140,7 @@ const Hero = () => {
       
       {/* Scroll Indicator */}
       <div 
-        className="absolute bottom-12 left-0 right-0 flex flex-col items-center justify-center animate-bounce cursor-pointer"
+        className="absolute bottom-8 md:bottom-12 left-0 right-0 flex flex-col items-center justify-center animate-bounce cursor-pointer"
         onClick={() => {
           document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
         }}

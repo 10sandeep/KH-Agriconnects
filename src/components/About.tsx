@@ -78,7 +78,7 @@ const About: React.FC = () => {
             </div>
             
             {/* Simple but Effective Stats - Clean 2x2 Layout */}
-            <div className="grid grid-cols-2 gap-6">
+            {/* <div className="grid grid-cols-2 gap-6">
               <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-green-700">
                 <div className="flex items-center mb-2">
                   <Users className="text-green-700 mr-2" size={20} />
@@ -110,7 +110,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="text-green-700 text-3xl font-bold">7</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         

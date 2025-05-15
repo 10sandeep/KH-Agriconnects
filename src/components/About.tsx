@@ -13,8 +13,10 @@ const About: React.FC = () => {
               <Leaf size={20} className="text-green-600 absolute -right-2 top-0 animate-pulse" />
             </div>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About KH Agriconnects</h2>
-          <div className="w-24 h-1 bg-green-700 mx-auto mb-6 transform transition-all duration-300 hover:w-32 hover:bg-green-600"></div>
+            <h2 className="text-5xl pb-5 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-800 to-green-500">
+              About KH Agriconncts
+            </h2>
+          <div className="w-24 h-1 bg-green-700 mx-auto mb-6 mt-2 transform transition-all duration-300 hover:w-32 hover:bg-green-600"></div>
           <p className="text-lg text-gray-600">
             Transforming Agriculture Through Innovation and Integration
           </p>

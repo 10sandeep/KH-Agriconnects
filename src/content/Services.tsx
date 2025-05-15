@@ -1,3 +1,12 @@
+import PICTURE1 from '../assets/Picture1.png'
+import PICTURE2 from '../assets/Picture2.png'
+import PICTURE3 from '../assets/Picture3 (2).png'
+import PICTURE4 from '../assets/picture4 (2).png'
+import PICTURE5 from '../assets/Picture5 (2).png'
+import PICTURE6 from '../assets/Picture6.png'
+import PICTURE7 from '../assets/Picture7.png'
+
+
 export interface Service {
   id: number;
   title: string;
@@ -12,7 +21,7 @@ export const services: Service[] = [
   {
     id: 1,
     title: "Custom Hiring Services of Agricultural Machinery",
-    image: "/images/custom-hiring.jpg",
+    image: PICTURE1,
     overview:
       "KH AGRICONNECT enables farmers to rent high-quality farm equipment on demand. This reduces capital investment and boosts operational efficiency.",
     whyItMatters:
@@ -28,7 +37,7 @@ export const services: Service[] = [
   {
     id: 2,
     title: "Contract Farming (Min. 25 Acres)",
-    image: "/images/contract-farming.jpg",
+    image: PICTURE2,
     overview:
       "We offer structured, secure contract farming models using mechanized cultivation tailored to the region and available resources.",
     whyItMatters:
@@ -44,7 +53,7 @@ export const services: Service[] = [
   {
     id: 3,
     title: "Training in Present and Futuristic Agri-Tech",
-    image: "/images/agri-training.jpg",
+    image: PICTURE3,
     overview:
       "We provide short-term and long-term training on emerging agri-tech, machinery, and digital farming.",
     whyItMatters:
@@ -60,7 +69,7 @@ export const services: Service[] = [
   {
     id: 4,
     title: "Agricultural Machinery Consultancy",
-    image: "/images/machinery-consultancy.jpg",
+    image: PICTURE4,
     overview:
       "We advise individuals and institutions on choosing the right equipment and maximizing ROI through informed decision-making.",
     whyItMatters:
@@ -76,7 +85,7 @@ export const services: Service[] = [
   {
     id: 5,
     title: "Custom Equipment Design & Development",
-    image: "/images/custom-equipment.jpg",
+    image: PICTURE5,
     overview:
       "When standard equipment doesn’t meet specific farm needs, we step in to design and prototype custom solutions.",
     whyItMatters:
@@ -92,7 +101,7 @@ export const services: Service[] = [
   {
     id: 6,
     title: "Buyer & Seller Sourcing Gateway",
-    image: "/images/sourcing-gateway.jpg",
+    image: PICTURE6,
     overview:
       "We connect genuine buyers with verified sellers of agricultural produce, machinery, and inputs ensuring transparency and fair pricing.",
     whyItMatters:
@@ -108,7 +117,7 @@ export const services: Service[] = [
   {
     id: 7,
     title: "Export of Agricultural Commodities",
-    image: "/images/export-agri.jpg",
+    image: PICTURE7,
     overview:
       "KH AGRICONNECT facilitates the export of Indian agricultural produce by ensuring quality compliance, packaging, and buyer connections.",
     whyItMatters:

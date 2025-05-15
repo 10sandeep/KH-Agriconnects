@@ -6,11 +6,12 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
 import Team from './pages/Team'; // Team page
-import Events from './components/Events';
-import Testimonials from './components/Testimonials';
+// import Events from './components/Events';
+// import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import ServiceDetail from './pages/ServiceDetails'; // Service detail page
+import ServiceDetail from './pages/ServiceDetails';
+import ServiceEnroll from './pages/AgriculturalServiceEnrollment'; // Service enrollment page
 
 // HomePage component (without Team)
 const HomePage = () => {
@@ -23,9 +24,8 @@ const HomePage = () => {
       <Hero />
       <About />
       <Services />
-      {/* Team removed from here */}
-      <Events />
-      <Testimonials />
+      {/* <Events /> */}
+      {/* <Testimonials /> */}
       <Contact />
     </div>
   );
@@ -44,6 +44,19 @@ const TeamPage = () => {
   );
 };
 
+// Service Enrollment page component
+const ServiceEnrollPage = () => {
+  useEffect(() => {
+    document.title = 'Service Enrollment | KH Agriconnects';
+  }, []);
+
+  return (
+    <div className="min-h-screen pt-16"> {/* pt-16 for fixed navbar spacing */}
+      <ServiceEnroll />
+    </div>
+  );
+};
+
 // Main App component with routing
 function App() {
   return (
@@ -54,6 +67,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/team" element={<TeamPage />} />
+            <Route path="/serviceEnrollment" element={<ServiceEnrollPage />} />
             <Route path="/service" element={<ServiceDetail />} /> {/* Service detail */}
           </Routes>
         </main>

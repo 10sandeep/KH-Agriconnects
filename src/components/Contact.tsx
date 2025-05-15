@@ -96,12 +96,12 @@ const Contact: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <div className="inline-block group">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 relative">
+          <h2 className="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-800 to-green-500">
               Get In Touch
-              <span className="absolute left-0 -bottom-2 w-0 h-1 bg-green-600 transition-all duration-300 group-hover:w-full"></span>
             </h2>
+          <div className="w-24 h-1 bg-green-700 mx-auto mb-6 mt-4 transform transition-all duration-300 hover:w-32 hover:bg-green-600"></div>
           </div>
-          <div className="w-24 h-1 bg-green-600 mx-auto mb-6 transition-all duration-300 hover:w-32 hover:bg-green-500"></div>
+       
           <p className="text-gray-600 max-w-2xl mx-auto">
             Have questions about our agricultural services? Reach out to our farming experts, and we'll help you cultivate success.
           </p>

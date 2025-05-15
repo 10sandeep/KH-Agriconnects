@@ -24,14 +24,8 @@ const About: React.FC = () => {
               alt="Agricultural field with modern technology"
               className="w-full h-auto object-cover"
             />
-            {/* Simple Caption Bar */}
-            <div className="bg-green-700 text-white p-4 flex justify-between items-center">
-              <span className="font-medium">Established 2008</span>
-              <div className="flex items-center">
-                <MapPin size={16} className="mr-1" />
-                <span>Centurion University</span>
-              </div>
-            </div>
+           
+         ?
           </div>
           
           {/* Right Column - Clean, Focused Content */}
@@ -77,56 +71,12 @@ const About: React.FC = () => {
               </div>
             </div>
             
-            {/* Simple but Effective Stats - Clean 2x2 Layout */}
-            {/* <div className="grid grid-cols-2 gap-6">
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-green-700">
-                <div className="flex items-center mb-2">
-                  <Users className="text-green-700 mr-2" size={20} />
-                  <span className="text-gray-700 font-medium">Farmers Supported</span>
-                </div>
-                <div className="text-green-700 text-3xl font-bold">5,000+</div>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-green-700">
-                <div className="flex items-center mb-2">
-                  <Tractor className="text-green-700 mr-2" size={20} />
-                  <span className="text-gray-700 font-medium">Advanced Machinery</span>
-                </div>
-                <div className="text-green-700 text-3xl font-bold">25+</div>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-green-700">
-                <div className="flex items-center mb-2">
-                  <Star className="text-green-700 mr-2" size={20} />
-                  <span className="text-gray-700 font-medium">Years of Experience</span>
-                </div>
-                <div className="text-green-700 text-3xl font-bold">15+</div>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-green-700">
-                <div className="flex items-center mb-2">
-                  <Check className="text-green-700 mr-2" size={20} />
-                  <span className="text-gray-700 font-medium">Specialized Services</span>
-                </div>
-                <div className="text-green-700 text-3xl font-bold">7</div>
-              </div>
-            </div> */}
+       
           </div>
         </div>
         
         {/* Simple Certification Banner */}
-        {/* <div className="mt-16 border-t border-gray-200 pt-12">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <p className="text-gray-700 mb-4 md:mb-0">
-              <span className="font-semibold">KH Agriconnects</span> is a certified agricultural service provider endorsed by the National Agricultural Research Initiative.
-            </p>
-            <div className="flex space-x-6">
-              <img src="/api/placeholder/80/40" alt="Certification Badge" className="h-10" />
-              <img src="/api/placeholder/80/40" alt="Certification Badge" className="h-10" />
-              <img src="/api/placeholder/80/40" alt="Certification Badge" className="h-10" />
-            </div>
-          </div>
-        </div> */}
+      
       </div>
     </section>
   );

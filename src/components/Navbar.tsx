@@ -1,24 +1,66 @@
 import React, { useState, useEffect } from 'react';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { Menu, X, Tractor, Leaf, Sun, Cloud, Droplets, ShoppingBasket } from 'lucide-react';
 
-// Custom Link component with proper TypeScript interface
+// Custom Link component that handles both internal routing and hash links
 interface LinkProps {
-  href: string;
+  to: string;
   className?: string;
   onClick?: () => void;
   children: React.ReactNode;
 }
 
-const Link: React.FC<LinkProps> = ({ href, className, onClick, children }) => (
-  <a href={href} className={className} onClick={onClick}>
-    {children}
-  </a>
-);
+const Link: React.FC<LinkProps> = ({ to, className, onClick, children }) => {
+  const location = useLocation();
+  
+  // Check if the link is a hash link or a page route
+  const isHashLink = to.startsWith('#');
+  const isActive = isHashLink 
+    ? location.hash === to
+    : location.pathname === to;
+    
+  const handleClick = (e: React.MouseEvent) => {
+    if (isHashLink) {
+      // For hash links on the same page
+      if (location.pathname === '/' || !to.includes('/')) {
+        // We're already on the homepage, just scroll to the section
+        onClick?.();
+      }
+    } else {
+      // For regular page navigation, let React Router handle it
+      onClick?.();
+    }
+  };
+
+  return isHashLink ? (
+    // Use regular anchor for hash links
+    <a 
+      href={location.pathname === '/' ? to : `/${to}`} 
+      className={className} 
+      onClick={(e) => {
+        handleClick(e);
+        onClick?.();
+      }}
+    >
+      {children}
+    </a>
+  ) : (
+    // Use RouterLink for page navigation
+    <RouterLink 
+      to={to} 
+      className={className} 
+      onClick={onClick}
+    >
+      {children}
+    </RouterLink>
+  );
+};
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [season, setSeason] = useState('spring');
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -76,6 +118,9 @@ const Navbar: React.FC = () => {
   };
 
   const currentTheme = seasonColors[season];
+  
+  // Whether we're on the homepage or not (affects navigation)
+  const isHomePage = location.pathname === '/';
 
   return (
     <nav 
@@ -86,7 +131,7 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="#home" className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center space-x-2">
           <div className="relative">
             <Tractor size={32} className={isScrolled ? currentTheme.secondary : 'text-white'} />
             <span className="absolute -top-1 -right-1">
@@ -98,34 +143,19 @@ const Navbar: React.FC = () => {
               KH Agriconnects
             </span>
             <span className={`text-xs ${isScrolled ? 'text-gray-600' : 'text-gray-200'}`}>
-             Powering Farms with Tech Tools and Trusted Trade
-
+              Powering Farms with Tech Tools and Trusted Trade
             </span>
           </div>
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
-          <NavItem href="#home" label="Home" isScrolled={isScrolled} theme={currentTheme} />
-          <NavItem href="#about" label="About Us" isScrolled={isScrolled} theme={currentTheme} />
-          <NavItem href="#services" label="Services" isScrolled={isScrolled} theme={currentTheme} />
-          {/* <NavItem href="#products" label="Products" isScrolled={isScrolled} theme={currentTheme} /> */}
-          <NavItem href="#team" label="Our Team" isScrolled={isScrolled} theme={currentTheme} />
-           <NavItem href="#events" label="Events" isScrolled={isScrolled} theme={currentTheme} />
-          <NavItem href="#contact" label="Contact Us" isScrolled={isScrolled} theme={currentTheme} />
-         
-          
-          {/* <Link 
-            href="#shop" 
-            className={`flex items-center px-4 py-2 rounded-full transition-colors ${
-              isScrolled 
-                ? `bg-green-700 text-white hover:bg-green-800` 
-                : `bg-white text-green-800 hover:bg-green-100`
-            }`}
-          >
-            <ShoppingBasket size={18} className="mr-2" />
-            Farm Shop
-          </Link> */}
+          <NavItem to={isHomePage ? "#home" : "/"} label="Home" isScrolled={isScrolled} theme={currentTheme} />
+          <NavItem to={isHomePage ? "#about" : "/#about"} label="About Us" isScrolled={isScrolled} theme={currentTheme} />
+          <NavItem to={isHomePage ? "#services" : "/#services"} label="Services" isScrolled={isScrolled} theme={currentTheme} />
+          <NavItem to="/team" label="Our Team" isScrolled={isScrolled} theme={currentTheme} />
+          <NavItem to={isHomePage ? "#events" : "/#events"} label="Events" isScrolled={isScrolled} theme={currentTheme} />
+          <NavItem to={isHomePage ? "#contact" : "/#contact"} label="Contact Us" isScrolled={isScrolled} theme={currentTheme} />
         </div>
 
         {/* Mobile Navigation Toggle */}
@@ -146,22 +176,12 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg absolute top-full left-0 right-0 z-10">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <MobileNavItem href="#home" label="Home" onClick={() => setIsOpen(false)} theme={currentTheme} />
-            <MobileNavItem href="#about" label="About Us" onClick={() => setIsOpen(false)} theme={currentTheme} />
-            <MobileNavItem href="#services" label="Services" onClick={() => setIsOpen(false)} theme={currentTheme} />
-            {/* <MobileNavItem href="#products" label="Products" onClick={() => setIsOpen(false)} theme={currentTheme} /> */}
-            <MobileNavItem href="#team" label="Our Team" onClick={() => setIsOpen(false)} theme={currentTheme} />
-            <MobileNavItem href="#Contact Us" label="Contact Us" onClick={() => setIsOpen(false)} theme={currentTheme} />
-            <MobileNavItem href="#events" label="Events" onClick={() => setIsOpen(false)} theme={currentTheme} />
-            
-            <Link 
-              href="#shop" 
-              className="flex items-center py-2 px-4 bg-green-700 text-white rounded-full"
-              onClick={() => setIsOpen(false)}
-            >
-              <ShoppingBasket size={18} className="mr-2" />
-              Farm Shop
-            </Link>
+            <MobileNavItem to={isHomePage ? "#home" : "/"} label="Home" onClick={() => setIsOpen(false)} theme={currentTheme} />
+            <MobileNavItem to={isHomePage ? "#about" : "/#about"} label="About Us" onClick={() => setIsOpen(false)} theme={currentTheme} />
+            <MobileNavItem to={isHomePage ? "#services" : "/#services"} label="Services" onClick={() => setIsOpen(false)} theme={currentTheme} />
+            <MobileNavItem to="/team" label="Our Team" onClick={() => setIsOpen(false)} theme={currentTheme} />
+            <MobileNavItem to={isHomePage ? "#contact" : "/#contact"} label="Contact Us" onClick={() => setIsOpen(false)} theme={currentTheme} />
+            <MobileNavItem to={isHomePage ? "#events" : "/#events"} label="Events" onClick={() => setIsOpen(false)} theme={currentTheme} />
           </div>
         </div>
       )}
@@ -171,7 +191,7 @@ const Navbar: React.FC = () => {
 
 // Desktop Navigation Item
 interface NavItemProps {
-  href: string;
+  to: string;
   label: string;
   isScrolled: boolean;
   theme: {
@@ -183,9 +203,9 @@ interface NavItemProps {
   };
 }
 
-const NavItem: React.FC<NavItemProps> = ({ href, label, isScrolled, theme }) => (
+const NavItem: React.FC<NavItemProps> = ({ to, label, isScrolled, theme }) => (
   <Link 
-    href={href} 
+    to={to} 
     className={`font-medium transition-colors flex items-center ${
       isScrolled 
         ? `text-gray-800 ${theme.hover}` 
@@ -198,7 +218,7 @@ const NavItem: React.FC<NavItemProps> = ({ href, label, isScrolled, theme }) => 
 
 // Mobile Navigation Item
 interface MobileNavItemProps {
-  href: string;
+  to: string;
   label: string;
   onClick: () => void;
   theme: {
@@ -210,9 +230,9 @@ interface MobileNavItemProps {
   };
 }
 
-const MobileNavItem: React.FC<MobileNavItemProps> = ({ href, label, onClick, theme }) => (
+const MobileNavItem: React.FC<MobileNavItemProps> = ({ to, label, onClick, theme }) => (
   <Link 
-    href={href} 
+    to={to} 
     className={`text-gray-800 font-medium ${theme.hover} transition-colors py-2 border-b border-gray-100 flex items-center`}
     onClick={onClick}
   >

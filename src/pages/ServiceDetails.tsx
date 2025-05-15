@@ -1,17 +1,11 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import { services } from '../content/Services';
 
 const ServiceDetail: React.FC = () => {
-  console.log('ServiceDetail component rendered');
 const url = new URL(window.location.href);
 const params = new URLSearchParams(url.search);
 const id = params.get('id');
-  console.log("params is",params);
-  console.log("id is",id);
-  console.log(services);
 const service = services.find((service) => service.id.toString() === id);
-console.log("service is",service);
 
   if (!service) {
     return <div className="text-center text-red-500 mt-20">Service not found.</div>;

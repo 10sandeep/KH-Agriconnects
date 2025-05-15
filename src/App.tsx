@@ -1,19 +1,20 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
-import Team from './pages/Team'; // Note this is importing from pages folder
+import Team from './pages/Team'; // Team page
 import Events from './components/Events';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ServiceDetail from './pages/ServiceDetails'; // Service detail page
 
-// Main HomePage component that includes all sections EXCEPT Team
+// HomePage component (without Team)
 const HomePage = () => {
   useEffect(() => {
-    // Update page title
     document.title = 'KH Agriconnects | Agricultural Services';
   }, []);
 
@@ -22,7 +23,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <Services />
-      {/* Team component removed from HomePage */}
+      {/* Team removed from here */}
       <Events />
       <Testimonials />
       <Contact />
@@ -30,16 +31,14 @@ const HomePage = () => {
   );
 };
 
-// TeamPage component that displays only the Team component
+// Team page component
 const TeamPage = () => {
   useEffect(() => {
-    // Update page title for Team page
     document.title = 'Our Team | KH Agriconnects';
   }, []);
 
   return (
-    <div className="min-h-screen pt-16">
-      {/* Added pt-16 to account for fixed navbar */}
+    <div className="min-h-screen pt-16"> {/* pt-16 for fixed navbar spacing */}
       <Team />
     </div>
   );
@@ -49,12 +48,15 @@ const TeamPage = () => {
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen">
+      <div className="min-h-screen flex flex-col">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/team" element={<TeamPage />} />
-        </Routes>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/team" element={<TeamPage />} />
+            <Route path="/service/:1" element={<ServiceDetail />} /> {/* Service detail */}
+          </Routes>
+        </main>
         <Footer />
       </div>
     </BrowserRouter>

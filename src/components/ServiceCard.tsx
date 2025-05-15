@@ -1,13 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 interface ServiceCardProps {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  index?: number;
+  id: number;               // Service id for navigation
+  icon: React.ReactNode;    // Icon component or element
+  title: string;            // Service title
+  description: string;      // Short description
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, index = 0 }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({ id, icon, title, description }) => {
+  const navigate = useNavigate();
+
+  const handleLearnMoreClick = () => {
+    navigate(`/service/${id}`);  // Navigate to service detail page with service id
+  };
+
   return (
     <div className="group relative bg-white rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl border border-gray-100 hover:border-green-200 flex flex-col h-full">
       {/* Decorative farm pattern in the background */}
@@ -21,12 +28,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, ind
         </svg>
       </div>
       
-      {/* Top accent bar using agriculture colors */}
+      {/* Top accent bar */}
       <div className="h-2 bg-gradient-to-r from-green-600 to-green-400"></div>
       
       <div className="p-8 flex flex-col h-full relative z-10">
-        
-        {/* Icon with enhanced styling */}
+        {/* Icon */}
         <div className="relative flex items-center justify-center w-16 h-16 rounded-full bg-green-50 mb-6 group-hover:bg-green-100 transition-all duration-300">
           <div className="absolute inset-0 rounded-full border-2 border-green-100 group-hover:border-green-200 transition-all duration-300"></div>
           <div className="relative transform group-hover:scale-110 transition-transform duration-300">
@@ -34,21 +40,20 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, ind
           </div>
         </div>
         
-        {/* Content */}
+        {/* Title */}
         <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-700 transition-colors duration-300">
           {title}
         </h3>
         
+        {/* Description */}
         <p className="text-gray-600 mb-6 flex-grow">
           {description}
         </p>
         
-        {/* Divider */}
-       
-        
-        {/* Learn more button with enhanced interaction */}
+        {/* Learn More button */}
         <div className="mt-auto">
           <button 
+            onClick={handleLearnMoreClick}
             className="flex items-center text-green-700 font-medium hover:text-green-800 transition-colors"
             aria-label={`Learn more about ${title}`}
           >

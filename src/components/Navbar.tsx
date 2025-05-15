@@ -114,7 +114,7 @@ const Navbar: React.FC = () => {
           <NavItem href="#contact" label="Contact Us" isScrolled={isScrolled} theme={currentTheme} />
           <NavItem href="#events" label="Events" isScrolled={isScrolled} theme={currentTheme} />
           
-          <Link 
+          {/* <Link 
             href="#shop" 
             className={`flex items-center px-4 py-2 rounded-full transition-colors ${
               isScrolled 
@@ -124,7 +124,7 @@ const Navbar: React.FC = () => {
           >
             <ShoppingBasket size={18} className="mr-2" />
             Farm Shop
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Navigation Toggle */}

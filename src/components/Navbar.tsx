@@ -111,8 +111,9 @@ const Navbar: React.FC = () => {
           <NavItem href="#services" label="Services" isScrolled={isScrolled} theme={currentTheme} />
           {/* <NavItem href="#products" label="Products" isScrolled={isScrolled} theme={currentTheme} /> */}
           <NavItem href="#team" label="Our Team" isScrolled={isScrolled} theme={currentTheme} />
+           <NavItem href="#events" label="Events" isScrolled={isScrolled} theme={currentTheme} />
           <NavItem href="#contact" label="Contact Us" isScrolled={isScrolled} theme={currentTheme} />
-          <NavItem href="#events" label="Events" isScrolled={isScrolled} theme={currentTheme} />
+         
           
           {/* <Link 
             href="#shop" 

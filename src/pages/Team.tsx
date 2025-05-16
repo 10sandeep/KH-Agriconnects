@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Linkedin, Mail, Leaf, ChevronRight, Globe } from "lucide-react";
-import LEAD1 from '../assets/DN RAO SIR.jpg'
-import LEAD2 from '../assets/Nanda Sir.jpg'
-import FOUNDER from '../assets/Harshavardhan sir.jpg'
-import CEO from '../assets/Prasant Sir.jpg'
-import TECHNICAL from '../assets/Sai Krishna Sir.jpg'
-import SENIOROP from '../assets/Sai sir.jpg'
+import LEAD1 from "../assets/DN RAO SIR.jpg";
+import LEAD2 from "../assets/Nanda Sir.jpg";
+import FOUNDER from "../assets/Harshavardhan sir.jpg";
+import CEO from "../assets/Prasant Sir.jpg";
+import TECHNICAL from "../assets/Sai Krishna Sir.jpg";
+import SENIOROP from "../assets/Sai sir.jpg";
 const Team = () => {
   const [hoveredMember, setHoveredMember] = useState(null);
 
@@ -14,44 +14,12 @@ const Team = () => {
 
   const teamMembers = [
     {
-      name: "Prof. D.N. Rao ",
-      role: " Lead advisor",
-      image: LEAD1,
-      bio: "NULL",
-      linkedin: "https://linkedin.com",
-      email: "harshavardhan@khagriconnects.org"
-    },
-    {
-      name: "Dr. S. P. Nanda ",
-      role: "Lead advisor",
-      image: LEAD2,
-      bio: "NULL",
-      linkedin: "https://linkedin.com",
-      email: "prasanth@khagriconnects.org"
-    },
-    {
-      name: "Sri Vijaya Kumar",
-      role: " Lead Advisor",
-      image: placeholderImage,
-      bio: "NULL",
-      linkedin: "https://linkedin.com",
-      email: "saikiran@khagriconnects.org"
-    },
-    {
-      name: " Dr. Subbarao",
-      role: " Lead Advisor",
-      image: placeholderImage,
-      bio: "NULL",
-      linkedin: "https://linkedin.com",
-      email: "sharmistha@khagriconnects.org"
-    },
-    {
       name: "Dr. Harshavardhan",
       role: " Proprietor cum Founder",
       image: FOUNDER,
       bio: "NULL",
       linkedin: "https://linkedin.com",
-      email: "jyotirmayee@khagriconnects.org"
+      email: "jyotirmayee@khagriconnects.org",
     },
     {
       name: "Dr. Ravuri Sai Prasanth",
@@ -59,7 +27,7 @@ const Team = () => {
       image: CEO,
       bio: "NULL",
       linkedin: "https://linkedin.com",
-      email: "ramakrishna@khagriconnects.org"
+      email: "ramakrishna@khagriconnects.org",
     },
     {
       name: "Mr. K. Sai Kiran ",
@@ -67,7 +35,7 @@ const Team = () => {
       image: TECHNICAL,
       bio: "NULL",
       linkedin: "https://linkedin.com",
-      email: "santosh@khagriconnects.org"
+      email: "santosh@khagriconnects.org",
     },
     {
       name: "Mr. Ramakrishna",
@@ -75,24 +43,58 @@ const Team = () => {
       image: SENIOROP,
       bio: "NULL",
       linkedin: "https://linkedin.com",
-      email: "nanda@khagriconnects.org"
+      email: "nanda@khagriconnects.org",
     },
-   
+    {
+      name: "Prof. D.N. Rao ",
+      role: " Lead advisor",
+      image: LEAD1,
+      bio: "NULL",
+      linkedin: "https://linkedin.com",
+      email: "harshavardhan@khagriconnects.org",
+    },
+    {
+      name: "Dr. S. P. Nanda ",
+      role: "Lead advisor",
+      image: LEAD2,
+      bio: "NULL",
+      linkedin: "https://linkedin.com",
+      email: "prasanth@khagriconnects.org",
+    },
+    {
+      name: "Sri Vijaya Kumar",
+      role: " Lead Advisor",
+      image: placeholderImage,
+      bio: "NULL",
+      linkedin: "https://linkedin.com",
+      email: "saikiran@khagriconnects.org",
+    },
+    {
+      name: " Dr. Subbarao",
+      role: " Lead Advisor",
+      image: placeholderImage,
+      bio: "NULL",
+      linkedin: "https://linkedin.com",
+      email: "sharmistha@khagriconnects.org",
+    },
   ];
 
   return (
-    <section 
-      id="team" 
+    <section
+      id="team"
       className="py-20 bg-gradient-to-br from-green-50 to-lime-100 relative overflow-hidden"
     >
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-64 h-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-green-200 opacity-30"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 translate-x-1/3 translate-y-1/3 rounded-full bg-green-300 opacity-20"></div>
-      
+
       {/* Pattern overlay */}
-      <div className="absolute inset-0" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2322c55e' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 20L20 0v10L10 20l10 10v10L0 20z'/%3E%3Cpath d='M20 0L40 20H30L20 10V0z'/%3E%3Cpath d='M20 40V30l10-10H40L20 40z'/%3E%3C/g%3E%3C/svg%3E")`,
-      }}></div>
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2322c55e' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 20L20 0v10L10 20l10 10v10L0 20z'/%3E%3Cpath d='M20 0L40 20H30L20 10V0z'/%3E%3Cpath d='M20 40V30l10-10H40L20 40z'/%3E%3C/g%3E%3C/svg%3E")`,
+        }}
+      ></div>
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header with Animation */}
@@ -116,8 +118,8 @@ const Team = () => {
             <div
               key={index}
               className={`bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-500 ${
-                hoveredMember === index 
-                  ? "scale-105 shadow-xl shadow-green-200" 
+                hoveredMember === index
+                  ? "scale-105 shadow-xl shadow-green-200"
                   : "hover:shadow-md hover:translate-y-[-5px]"
               }`}
               onMouseEnter={() => setHoveredMember(index)}
@@ -129,7 +131,9 @@ const Team = () => {
                   src={member.image}
                   alt={member.name}
                   className={`w-full h-full object-cover transition-all duration-700 ${
-                    hoveredMember === index ? "scale-110 filter brightness-90" : ""
+                    hoveredMember === index
+                      ? "scale-110 filter brightness-90"
+                      : ""
                   }`}
                 />
                 <div
@@ -137,11 +141,13 @@ const Team = () => {
                     hoveredMember === index ? "opacity-80" : "opacity-40"
                   }`}
                 ></div>
-                
+
                 {/* Info on Hover */}
-                <div 
+                <div
                   className={`absolute bottom-0 left-0 right-0 p-4 transform transition-transform duration-500 ${
-                    hoveredMember === index ? "translate-y-0" : "translate-y-full"
+                    hoveredMember === index
+                      ? "translate-y-0"
+                      : "translate-y-full"
                   }`}
                 >
                   <p className="text-white text-sm font-light leading-relaxed">
@@ -155,8 +161,8 @@ const Team = () => {
                 {/* Decorative icon */}
                 <div
                   className={`absolute -top-6 right-6 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-500 ${
-                    hoveredMember === index 
-                      ? "bg-green-700 rotate-[360deg]" 
+                    hoveredMember === index
+                      ? "bg-green-700 rotate-[360deg]"
                       : "bg-green-600"
                   }`}
                 >
@@ -166,9 +172,11 @@ const Team = () => {
                 {/* Name and Role */}
                 <h3 className="text-xl font-bold text-gray-800 mb-1 group relative">
                   {member.name}
-                  <span className={`block h-1 w-0 bg-green-500 transition-all duration-500 ${
-                    hoveredMember === index ? "w-full" : ""
-                  }`}></span>
+                  <span
+                    className={`block h-1 w-0 bg-green-500 transition-all duration-500 ${
+                      hoveredMember === index ? "w-full" : ""
+                    }`}
+                  ></span>
                 </h3>
                 <p
                   className={`font-medium mb-4 transition-colors duration-300 ${
@@ -208,9 +216,13 @@ const Team = () => {
                   >
                     <Mail size={18} />
                   </a>
-                  <span className={`ml-auto text-sm font-medium transition-colors duration-300 ${
-                    hoveredMember === index ? "text-green-600" : "text-gray-400"
-                  }`}>
+                  <span
+                    className={`ml-auto text-sm font-medium transition-colors duration-300 ${
+                      hoveredMember === index
+                        ? "text-green-600"
+                        : "text-gray-400"
+                    }`}
+                  >
                     <ChevronRight size={16} className="inline" /> View Profile
                   </span>
                 </div>

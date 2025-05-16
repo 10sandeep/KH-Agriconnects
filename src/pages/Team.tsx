@@ -4,7 +4,7 @@ import LEAD1 from "../assets/DN SIR.jpg";
 import LEAD2 from "../assets/NANDA SIR .jpg";
 import FOUNDER from "../assets/Harshavardhan sir.jpg";
 import CEO from "../assets/Prasant Sir.jpg";
-import TECHNICAL from "../assets/Sai Krishna Sir.jpg";
+import TECHNICAL from "../assets/Sai Kiran sir.jpg";
 import SENIOROP from "../assets/Sai sir.jpg";
 const Team = () => {
   const [hoveredMember, setHoveredMember] = useState(null);

@@ -10,7 +10,7 @@ const Team = () => {
   const teamMembers = [
     {
       name: "Dr. Korla Harshavardhan",
-      role: "Director of Agricultural Services",
+      role: "Core team member",
       image: placeholderImage,
       bio: "Dr. Harshavardhan brings 15 years of experience in agricultural research and extension services.",
       linkedin: "https://linkedin.com",
@@ -18,7 +18,7 @@ const Team = () => {
     },
     {
       name: "Dr. Ravuri Sai Prasanth",
-      role: "Head of Agri-tech Training",
+      role: "Core team member",
       image: placeholderImage,
       bio: "Dr. Prasanth specializes in developing training programs that bridge traditional farming with modern technology.",
       linkedin: "https://linkedin.com",
@@ -26,7 +26,7 @@ const Team = () => {
     },
     {
       name: "Mr. Sai Kiran",
-      role: "Agricultural Engineer",
+      role: "Technical Leads",
       image: placeholderImage,
       bio: "Sai leads our equipment design team, creating innovative solutions for local farming challenges.",
       linkedin: "https://linkedin.com",
@@ -34,7 +34,7 @@ const Team = () => {
     },
     {
       name: "Ms. Sharmistha Sahu",
-      role: "Agricultural Consultant",
+      role: "Technical Leads",
       image: placeholderImage,
       bio: "Sharmistha specializes in sustainable farming practices and crop optimization strategies.",
       linkedin: "https://linkedin.com",
@@ -42,7 +42,7 @@ const Team = () => {
     },
     {
       name: "Ms. Jyotirmayee Behera",
-      role: "Agricultural Consultant",
+      role: "Technical Leads",
       image: placeholderImage,
       bio: "Jyotirmayee focuses on developing region-specific agricultural solutions and farmer training modules.",
       linkedin: "https://linkedin.com",
@@ -50,7 +50,7 @@ const Team = () => {
     },
     {
       name: "Mr. Ramakrishna",
-      role: "Agricultural Consultant",
+      role: "Technical Leads",
       image: placeholderImage,
       bio: "Ramakrishna has extensive experience in soil health management and organic farming techniques.",
       linkedin: "https://linkedin.com",
@@ -58,7 +58,7 @@ const Team = () => {
     },
     {
       name: "Dr. Santosh D.T",
-      role: "Research Scientist",
+      role: "Technical Leads",
       image: placeholderImage,
       bio: "Dr. Santosh leads our research initiatives on climate-resilient crop varieties and farming methods.",
       linkedin: "https://linkedin.com",
@@ -66,7 +66,7 @@ const Team = () => {
     },
     {
       name: "Dr. S. P. Nanda",
-      role: "Soil Specialist",
+      role: "Lead advisors",
       image: placeholderImage,
       bio: "Dr. Nanda's expertise in soil science helps farmers optimize their land use and nutrient management.",
       linkedin: "https://linkedin.com",
@@ -74,7 +74,7 @@ const Team = () => {
     },
     {
       name: "Dr. Subbarao",
-      role: "Plant Pathologist",
+      role: "Lead advisors",
       image: placeholderImage,
       bio: "Dr. Subbarao specializes in identifying and managing crop diseases using integrated approaches.",
       linkedin: "https://linkedin.com",
@@ -82,7 +82,7 @@ const Team = () => {
     },
     {
       name: "Sri. K. Vijayakumar",
-      role: "Community Outreach Manager",
+      role: "Lead advisors",
       image: placeholderImage,
       bio: "Vijayakumar builds connections between our technical team and local farming communities.",
       linkedin: "https://linkedin.com",

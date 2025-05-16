@@ -158,7 +158,7 @@ const Navbar: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <span className={`text-xl font-bold tracking-tight transition-all duration-300 ${isScrolled ? currentTheme.secondary : 'text-white'}`}>
-                  KH Agriconnects
+                  KH Agriconnect
                 </span>
                 <div className="relative overflow-hidden h-5">
                   <span className={`text-xs transition-all duration-300 ${isScrolled ? 'text-gray-600' : 'text-gray-200'}`}>

@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <Tractor size={32} className="text-green-500" />
-              <span className="text-xl font-bold">KH Agriconnects</span>
+              <span className="text-xl font-bold">KH Agriconnect</span>
             </div>
             <p className="text-gray-300 mb-6">
               Powering farms with tech tools and trusted trade. A premier agricultural service platform from Centurion University.
@@ -102,8 +102,8 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-gray-700 pt-8">
           <div className="text-center text-gray-400">
-            <p>&copy; {currentYear} KH Agriconnects. All rights reserved.</p>
-            <p className="mt-2">A Centurion University Initiative</p>
+            <p>&copy; {currentYear} KH Agriconnect. All rights reserved.</p>
+            
           </div>
         </div>
       </div>

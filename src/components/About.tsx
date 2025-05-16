@@ -14,7 +14,7 @@ const About: React.FC = () => {
             </div>
           </div>
             <h2 className="text-5xl pb-5 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-800 to-green-500">
-              About KH Agriconnects
+              About KH Agriconnect
             </h2>
           <div className="w-24 h-1 bg-green-700 mx-auto mb-6 mt-2 transform transition-all duration-300 hover:w-32 hover:bg-green-600"></div>
           <p className="text-lg text-gray-600">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Linkedin, Mail, Leaf, ChevronRight, Globe } from "lucide-react";
-import LEAD1 from "../assets/DN RAO SIR.jpg";
-import LEAD2 from "../assets/Nanda Sir.jpg";
+import LEAD1 from "../assets/DN SIR.jpg";
+import LEAD2 from "../assets/NANDA SIR .jpg";
 import FOUNDER from "../assets/Harshavardhan sir.jpg";
 import CEO from "../assets/Prasant Sir.jpg";
 import TECHNICAL from "../assets/Sai Krishna Sir.jpg";
@@ -71,7 +71,7 @@ const Team = () => {
     },
     {
       name: " Dr. Subbarao",
-      role: " Lead Advisor",
+      role: " Lead Advisor",
       image: placeholderImage,
       bio: "NULL",
       linkedin: "https://linkedin.com",
@@ -125,8 +125,8 @@ const Team = () => {
               onMouseEnter={() => setHoveredMember(index)}
               onMouseLeave={() => setHoveredMember(null)}
             >
-              {/* Image Container */}
-              <div className="relative overflow-hidden h-64">
+              {/* Image Container - Increased height from h-63 to h-96 */}
+              <div className="relative overflow-hidden h-96">
                 <img
                   src={member.image}
                   alt={member.name}

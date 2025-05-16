@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { Linkedin, Mail, Leaf, ChevronRight, Globe } from "lucide-react";
-
+import LEAD1 from '../assets/DN RAO SIR.jpg'
+import LEAD2 from '../assets/Nanda Sir.jpg'
+import FOUNDER from '../assets/Harshavardhan sir.jpg'
+import CEO from '../assets/Prasant Sir.jpg'
+import TECHNICAL from '../assets/Sai Krishna Sir.jpg'
+import SENIOROP from '../assets/Sai sir.jpg'
 const Team = () => {
   const [hoveredMember, setHoveredMember] = useState(null);
 
@@ -9,85 +14,70 @@ const Team = () => {
 
   const teamMembers = [
     {
-      name: "Dr. Korla Harshavardhan",
-      role: "Core team member",
-      image: placeholderImage,
-      bio: "Dr. Harshavardhan brings 15 years of experience in agricultural research and extension services.",
+      name: "Prof. D.N. Rao ",
+      role: " Lead advisor",
+      image: LEAD1,
+      bio: "NULL",
       linkedin: "https://linkedin.com",
       email: "harshavardhan@khagriconnects.org"
     },
     {
-      name: "Dr. Ravuri Sai Prasanth",
-      role: "Core team member",
-      image: placeholderImage,
-      bio: "Dr. Prasanth specializes in developing training programs that bridge traditional farming with modern technology.",
+      name: "Dr. S. P. Nanda ",
+      role: "Lead advisor",
+      image: LEAD2,
+      bio: "NULL",
       linkedin: "https://linkedin.com",
       email: "prasanth@khagriconnects.org"
     },
     {
-      name: "Mr. Sai Kiran",
-      role: "Technical Leads",
+      name: "Sri Vijaya Kumar",
+      role: " Lead Advisor",
       image: placeholderImage,
-      bio: "Sai leads our equipment design team, creating innovative solutions for local farming challenges.",
+      bio: "NULL",
       linkedin: "https://linkedin.com",
       email: "saikiran@khagriconnects.org"
     },
     {
-      name: "Ms. Sharmistha Sahu",
-      role: "Technical Leads",
+      name: " Dr. Subbarao",
+      role: " Lead Advisor",
       image: placeholderImage,
-      bio: "Sharmistha specializes in sustainable farming practices and crop optimization strategies.",
+      bio: "NULL",
       linkedin: "https://linkedin.com",
       email: "sharmistha@khagriconnects.org"
     },
     {
-      name: "Ms. Jyotirmayee Behera",
-      role: "Technical Leads",
-      image: placeholderImage,
-      bio: "Jyotirmayee focuses on developing region-specific agricultural solutions and farmer training modules.",
+      name: "Dr. Harshavardhan",
+      role: " Proprietor cum Founder",
+      image: FOUNDER,
+      bio: "NULL",
       linkedin: "https://linkedin.com",
       email: "jyotirmayee@khagriconnects.org"
     },
     {
-      name: "Mr. Ramakrishna",
-      role: "Technical Leads",
-      image: placeholderImage,
-      bio: "Ramakrishna has extensive experience in soil health management and organic farming techniques.",
+      name: "Dr. Ravuri Sai Prasanth",
+      role: "CEO",
+      image: CEO,
+      bio: "NULL",
       linkedin: "https://linkedin.com",
       email: "ramakrishna@khagriconnects.org"
     },
     {
-      name: "Dr. Santosh D.T",
-      role: "Technical Leads",
-      image: placeholderImage,
-      bio: "Dr. Santosh leads our research initiatives on climate-resilient crop varieties and farming methods.",
+      name: "Mr. K. Sai Kiran ",
+      role: "Technical Farm Supervisor",
+      image: TECHNICAL,
+      bio: "NULL",
       linkedin: "https://linkedin.com",
       email: "santosh@khagriconnects.org"
     },
     {
-      name: "Dr. S. P. Nanda",
-      role: "Lead advisors",
-      image: placeholderImage,
-      bio: "Dr. Nanda's expertise in soil science helps farmers optimize their land use and nutrient management.",
+      name: "Mr. Ramakrishna",
+      role: "Senior Farm Equipment Operator",
+      image: SENIOROP,
+      bio: "NULL",
       linkedin: "https://linkedin.com",
       email: "nanda@khagriconnects.org"
     },
-    {
-      name: "Dr. Subbarao",
-      role: "Lead advisors",
-      image: placeholderImage,
-      bio: "Dr. Subbarao specializes in identifying and managing crop diseases using integrated approaches.",
-      linkedin: "https://linkedin.com",
-      email: "subbarao@khagriconnects.org"
-    },
-    {
-      name: "Sri. K. Vijayakumar",
-      role: "Lead advisors",
-      image: placeholderImage,
-      bio: "Vijayakumar builds connections between our technical team and local farming communities.",
-      linkedin: "https://linkedin.com",
-      email: "vijayakumar@khagriconnects.org"
-    },
+   
   ];
 
   return (

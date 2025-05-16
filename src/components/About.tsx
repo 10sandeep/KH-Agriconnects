@@ -14,7 +14,7 @@ const About: React.FC = () => {
             </div>
           </div>
             <h2 className="text-5xl pb-5 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-800 to-green-500">
-              About KH Agriconncts
+              About KH Agriconnects
             </h2>
           <div className="w-24 h-1 bg-green-700 mx-auto mb-6 mt-2 transform transition-all duration-300 hover:w-32 hover:bg-green-600"></div>
           <p className="text-lg text-gray-600">
@@ -73,28 +73,32 @@ const About: React.FC = () => {
                   <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3 group-hover:bg-green-200 transition-colors duration-300">
                     <Leaf className="text-green-700" size={18} />
                   </div>
-                  <span className="text-gray-700 group-hover:text-green-800 transition-colors duration-300">Sustainable Innovation</span>
+                  <span className="text-gray-700 group-hover:text-green-800 transition-colors duration-300">Ensure MSP coverage for all crops.
+</span>
                 </div>
                 
                 <div className="flex items-center group">
                   <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3 group-hover:bg-green-200 transition-colors duration-300">
                     <Users className="text-green-700" size={18} />
                   </div>
-                  <span className="text-gray-700 group-hover:text-green-800 transition-colors duration-300">Farmer-First Approach</span>
+                  <span className="text-gray-700 group-hover:text-green-800 transition-colors duration-300">Reclaim and cultivate barren lands.
+</span>
                 </div>
                 
                 <div className="flex items-center group">
                   <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3 group-hover:bg-green-200 transition-colors duration-300">
                     <Sun className="text-green-700" size={18} />
                   </div>
-                  <span className="text-gray-700 group-hover:text-green-800 transition-colors duration-300">Community Empowerment</span>
+                  <span className="text-gray-700 group-hover:text-green-800 transition-colors duration-300">Promote double cropping in single-crop fields.
+</span>
                 </div>
                 
                 <div className="flex items-center group">
                   <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-3 group-hover:bg-green-200 transition-colors duration-300">
                     <Droplets className="text-green-700" size={18} />
                   </div>
-                  <span className="text-gray-700 group-hover:text-green-800 transition-colors duration-300">Environmental Stewardship</span>
+                  <span className="text-gray-700 group-hover:text-green-800 transition-colors duration-300">Demonstrate agriculture's profitability through mechanization
+</span>
                 </div>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { Menu, X, Tractor, Leaf, Sun, Cloud, Droplets, ShoppingBasket, ChevronDown } from 'lucide-react';
+import LOGO from '../assets/Logo.png'
 
 // Custom Link component that handles both internal routing and hash links
 interface LinkProps {
@@ -147,29 +148,31 @@ const Navbar: React.FC = () => {
         <div className="grid grid-cols-12 items-center">
           {/* Logo Section - left column (spans 3 columns on lg) */}
           <div className="col-span-6 lg:col-span-3">
-            <Link to="/" className="group flex items-center space-x-3 relative">
-              <div className={`relative p-2 rounded-full transition-all duration-300 ${
-                isScrolled ? `${currentTheme.iconBg} ${currentTheme.borderColor} border` : 'bg-white/10'
-              }`}>
-                <Tractor size={32} className={`transition-all duration-300 ${isScrolled ? currentTheme.secondary : 'text-white'}`} />
-                <span className="absolute -top-1 -right-1 transition-all duration-300 group-hover:rotate-12">
-                  {currentTheme.icon}
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <span className={`text-xl font-bold tracking-tight transition-all duration-300 ${isScrolled ? currentTheme.secondary : 'text-white'}`}>
-                  KH Agriconnect
-                </span>
-                <div className="relative overflow-hidden h-5">
-                  <span className={`text-xs transition-all duration-300 ${isScrolled ? 'text-gray-600' : 'text-gray-200'}`}>
-                    Powering Farms with Tech Tools and Trusted Trade
-                  </span>
-                  <span className={`absolute bottom-0 left-0 w-full h-0.5 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${
-                    isScrolled ? currentTheme.borderColor : 'bg-white'
-                  }`}></span>
-                </div>
-              </div>
-            </Link>
+           <Link to="/" className="group flex items-center space-x-3 relative">
+  <div className={`relative w-12 h-12 p-1 rounded-full transition-all duration-300 ${
+    isScrolled ? `${currentTheme.iconBg} ${currentTheme.borderColor} border` : 'bg-white/10'
+  }`}>
+    <img 
+      src={LOGO} 
+      alt="KH Agriconnect Logo" 
+      className="object-contain w-full h-full" 
+    />
+  </div>
+  {/* <div className="flex flex-col">
+    <span className={`text-xl font-bold tracking-tight transition-all duration-300 ${isScrolled ? currentTheme.secondary : 'text-white'}`}>
+      KH Agriconnect
+    </span>
+    <div className="relative overflow-hidden h-5">
+      <span className={`text-xs transition-all duration-300 ${isScrolled ? 'text-gray-600' : 'text-gray-200'}`}>
+        Powering Farms with Tech Tools and Trusted Trade
+      </span>
+      <span className={`absolute bottom-0 left-0 w-full h-0.5 transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${
+        isScrolled ? currentTheme.borderColor : 'bg-white'
+      }`}></span>
+    </div>
+  </div> */}
+</Link>
+
           </div>
 
           {/* Desktop Navigation - center column (spans 6 columns on lg) */}

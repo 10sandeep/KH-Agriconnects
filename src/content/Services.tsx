@@ -25,7 +25,7 @@ export const services: Service[] = [
     image: PICTURE1,
     tagline:"Empowering farmers with access to modern tools without the burden of ownership.",
     overview:
-      "KH AGRICONNECT enables farmers to rent high-quality farm equipment on a need basis, helping them reduce capital expenditure and increase operational efficiency.",
+      "KH AGRICONNECT enables farmers to hire any farm equipment on a need basis, helping them reduce capital expenditure and increase operational efficiency.",
     whyItMatters:
       "Small and marginal farmers often cannot afford advanced equipment. Our service democratizes access to modern mechanization, increasing productivity and reducing labor dependency.",
     whoItsFor: [
@@ -36,7 +36,7 @@ export const services: Service[] = [
       "Agri-Entrepreneurs with Multi-Farm Operations — Individuals or firms managing several farms, often via contract farming",
     ],
     howItWorks:
-      "Farmers can book equipment all agricultural equipment via mobile, web, or local agents. We ensure timely delivery and operator support",
+      "Farmers can book any agricultural equipment via mobile, web, or local agents. We ensure timely delivery and operator support",
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ export const services: Service[] = [
     image: PICTURE2,
     tagline :"Collaborative farming for assured returns and sustainable land use.",
     overview:
-      "We offer structured and secure contract farming models that incorporate mechanized cultivation of suitable crops, tailored to the specific area and resource availability. Our approach ensures assured returns for landowners and optimized, consistent production for buyers.",
+      "KH AGRICONNECT offer structured and secure contract farming models that incorporate mechanized cultivation of suitable crops, tailored to the specific area and resource availability. Our approach ensures assured returns for landowners and optimized, consistent production for buyers.",
     whyItMatters:
       "Unutilized or mismanaged land leads to revenue loss. Our contract farming brings in technology, best practices, and assured returns.",
     whoItsFor: [
@@ -61,7 +61,7 @@ export const services: Service[] = [
     image: PICTURE3,
     tagline:"Equipping rural youth and farmers with future-ready agri-tech skills.",
     overview:
-      "We offer short-term and long-term training programs focused on emerging agricultural technologies, farm machinery operations, and digital farming.",
+      "KH AGRICONNECT offer short-term and long-term training programs focused on emerging agricultural technologies, farm machinery operations, and digital farming.",
     whyItMatters:
       "The future of farming is high-tech. Without skilled manpower, India risks falling behind in smart agriculture adoption.",
     whoItsFor: [
@@ -93,9 +93,9 @@ export const services: Service[] = [
     id: 5,
     title: "Custom equipment design and development as per the farmer requirement",
     image: PICTURE5,
-    tagline:"Tailor-made innovations to solve real farmer problems.",
+    tagline:"Customized innovations designed to solve specific, need-based problems of farmers.",
     overview:
-      "We develop custom machinery solutions when standard equipment doesn't fit unique farm needs, and also provide necessary modifications to existing commercial machines as per farmer specifications.",
+      "KH AGRICONNECT develop custom machinery solutions when standard equipment doesn't fit unique farm needs, and also provide necessary modifications to existing commercial machines as per farmer specifications.",
     whyItMatters:
       "Many commercially available machines do not perform efficiently across all regions due to local variations. To ensure optimal performance, selected machines are customized with necessary modifications. Indian farms often require context-specific tools, as imported machinery may not suit local farming conditions",
     whoItsFor: [

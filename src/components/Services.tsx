@@ -38,7 +38,7 @@ const Services: React.FC = () => {
     {
       icon: <Tool size={40} className="text-green-700" />,
       title: "Custom equipment design and development as per the farmer requirement",
-      description: "Tailor-made innovations to solve real farmer problems.",
+      description: "Customized innovations designed to solve specific, need-based problems of farmers.",
       id:5
     },
     {

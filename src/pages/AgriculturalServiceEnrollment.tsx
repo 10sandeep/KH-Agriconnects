@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 
 interface FormProps {
   onSubmit: (data: any) => void;
@@ -34,6 +34,10 @@ const AgricultureServicesEnrollment: React.FC<FormProps> = ({ onSubmit }) => {
       ...formData
     });
   };
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   return (
     <div  id="serviceEnrollment" className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { services } from '../content/Services';
 import { ArrowRight, Users, Lightbulb, Clock, ChevronRight } from 'lucide-react';
 
@@ -7,6 +7,11 @@ const ServiceDetail: React.FC = () => {
   const params = new URLSearchParams(url.search);
   const id = params.get('id');
   const service = services.find((service) => service.id.toString() === id);
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!service) {
     return (

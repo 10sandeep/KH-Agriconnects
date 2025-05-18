@@ -1,6 +1,12 @@
 import React from 'react';
-import { Tractor, Leaf, School, Briefcase, PenTool as Tool, ShoppingBag, BarChart4 } from 'lucide-react';
+import { Tractor } from 'lucide-react';
 import ServiceCard from './ServiceCard';
+import ICON2 from '../assets/Icon2.png'
+import ICON3 from '../assets/Icon3.png'
+import ICON4 from '../assets/Icon4.png'
+import ICON5 from '../assets/Icon5.png'
+import ICON6 from '../assets/Icon6.png'
+import ICON7 from '../assets/Icon7.png'
 
 interface Service {
   icon: React.ReactNode;
@@ -18,37 +24,37 @@ const Services: React.FC = () => {
       id:1
     },
     {
-      icon: <Leaf size={40} className="text-green-700" />,
+      icon: <img src={ICON2} alt="Contract Farming" className="w-10 h-10" />,
       title: "Contract Farming of lands with area of minimum 25 acres",
       description: "Collaborative farming for assured returns and sustainable land use.",
       id:2
     },
     {
-      icon: <School size={40} className="text-green-700" />,
+      icon: <img src={ICON3} alt="Training" className="w-10 h-10" />,
       title: "Training farmers on present and futuristic machines",
       description: "Equipping rural youth and farmers with future-ready agri-tech skills.",
       id:3
     },
     {
-      icon: <Briefcase size={40} className="text-green-700" />,
+      icon: <img src={ICON4} alt="Consultancy" className="w-10 h-10" />,
       title: "Consultancy services for appropriate agricultural machineries",
       description: "Guiding farmers and agri-entrepreneurs to choose the right tools for maximum yield.",
       id:4
     },
     {
-      icon: <Tool size={40} className="text-green-700" />,
+      icon: <img src={ICON5} alt="Custom Equipment" className="w-10 h-10" />,
       title: "Custom equipment design and development as per the farmer requirement",
       description: "Customized innovations designed to solve specific, need-based problems of farmers.",
       id:5
     },
     {
-      icon: <ShoppingBag size={40} className="text-green-700" />,
+      icon: <img src={ICON6} alt="Sourcing Gateway" className="w-10 h-10" />,
       title: "Buyers / sellers sourcing gateway",
       description: "Connecting producers to markets.",
       id:6
     },
     {
-      icon: <BarChart4 size={40} className="text-green-700" />,
+      icon: <img src={ICON7} alt="Agricultural Commodities" className="w-10 h-10" />,
       title: "Purchase of export quality Agricultural commodities",
       description: "Procuring Premium Indian Produce for International Buyers.",
       id:7

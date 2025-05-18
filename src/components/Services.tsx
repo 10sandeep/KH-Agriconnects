@@ -13,44 +13,44 @@ const Services: React.FC = () => {
   const services: Service[] = [
     {
       icon: <Tractor size={40} className="text-green-700" />,
-      title: "Custom Hiring Services of Agricultural Machinery",
-      description: "Empowering farmers with access to advanced machinery without the burden of ownership. Our custom hiring centers provide everything from tillage to harvesting equipment, enabling precision and productivity at every stage.  ",
+      title: "Custom hiring services of all agricultural machineries",
+      description: "Empowering farmers with access to modern tools without the burden of ownership.",
       id:1
     },
     {
       icon: <Leaf size={40} className="text-green-700" />,
-      title: "Contract Farming (Min. 25 Acres)",
-      description: "We offer structured and secure contract farming models that incorporate mechanized cultivation of suitable crops, tailored to the specific area and resource availability. Our approach ensures assured returns for landowners and optimized, consistent production for buyers.",
+      title: "Contract Farming of lands with area of minimum 25 acres",
+      description: "Collaborative farming for assured returns and sustainable land use.",
       id:2
     },
     {
       icon: <School size={40} className="text-green-700" />,
-      title: "Training in Present and Futuristic Agri-Tech",
-      description: "Building a skilled rural workforce through hands-on training in smart machinery, automation, and data-driven farming practices.",
+      title: "Training farmers on present and futuristic machines",
+      description: "Equipping rural youth and farmers with future-ready agri-tech skills.",
       id:3
     },
     {
       icon: <Briefcase size={40} className="text-green-700" />,
       title: "Consultancy services for appropriate agricultural machineries",
-      description: "We assist farmers in choosing the most suitable agricultural equipment from the market, customized to their specific crop types, soil conditions, and operational needs",
+      description: "Guiding farmers and agri-entrepreneurs to choose the right tools for maximum yield.",
       id:4
     },
     {
       icon: <Tool size={40} className="text-green-700" />,
-      title: "Custom Equipment Design & Development",
-      description: "We specialize in the design and development of agricultural machinery through our dedicated R&D team, customized to meet the unique functional requirements of farmer.",
+      title: "Custom equipment design and development as per the farmer requirement",
+      description: "Tailor-made innovations to solve real farmer problems.",
       id:5
     },
     {
       icon: <ShoppingBag size={40} className="text-green-700" />,
-      title: "Buyer & Seller Sourcing Gateway",
-      description: "A digital and physical bridge that connects producers with reliable markets. Whether local mandis or bulk buyers, we facilitate transparent, fair, and timely trade.",
+      title: "Buyers / sellers sourcing gateway",
+      description: "Connecting producers to markets.",
       id:6
     },
     {
       icon: <BarChart4 size={40} className="text-green-700" />,
-      title: "Export of Agricultural Commodities",
-      description: "We identify and promote export-quality produce from Indian farms, creating global footprints for local harvests.",
+      title: "Purchase of export quality Agricultural commodities",
+      description: "Procuring Premium Indian Produce for International Buyers.",
       id:7
     }
   ];

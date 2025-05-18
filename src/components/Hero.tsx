@@ -81,7 +81,7 @@ const Hero = () => {
                 </div>
                 <div className="h-10 w-px bg-green-500/30 mx-2 md:mx-4"></div>
                 <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
-                  <span className="text-green-500">KH</span> AGRICONNECTS
+                  <span className="text-green-500">KH</span> AGRICONNECT
                 </h1>
               </div>
             </div>
@@ -104,9 +104,8 @@ const Hero = () => {
             {/* Main Description */}
             <div className={`max-w-3xl mx-auto transition-all duration-1000 delay-300 ${typingComplete ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <p className="text-base md:text-xl font-light leading-relaxed text-gray-100">
-                We are a sustainable agricultural solutions provider passionate about transforming rural livelihoods. 
-                Rooted in innovation, driven by collaboration, and guided by sustainability, we deliver end-to-end farm 
-                mechanization and market-linkage services to empower farmers, agri-entrepreneurs, and communities.
+               We are KH AGRICONNECT an sustainable agricultural solutions provider through mechanized cultivation passionate about transforming rural livelihoods. Rooted in innovation, driven by collaboration, and guided by sustainability, we deliver end-to-end farm mechanization and market-linkage services to empower farmers, agri-entrepreneurs, and communities. From modern equipment rentals to global commodity trade we bring the future of farming closer to every acre.
+
               </p>
             </div>
             

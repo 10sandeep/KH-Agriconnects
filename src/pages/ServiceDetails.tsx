@@ -50,7 +50,7 @@ const ServiceDetail: React.FC = () => {
             </h1>
             <div className="h-1 w-32 bg-green-100 my-6"></div>
             <p className="text-gray-600 leading-relaxed">
-              {service.title} offers sustainable solutions for modern agriculture challenges.
+              {service.tagline} 
             </p>
           </div>
         </div>

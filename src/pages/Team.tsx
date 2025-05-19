@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import { Linkedin, Mail, Leaf, ChevronRight, Globe } from "lucide-react";
 import LEAD1 from "../assets/DN SIR.jpg";
 import LEAD2 from "../assets/NANDA SIR .jpg";
@@ -78,6 +78,10 @@ const Team = () => {
       email: "sharmistha@khagriconnects.org",
     },
   ];
+
+     useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
 
   return (
     <section

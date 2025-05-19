@@ -1,6 +1,6 @@
-import React from 'react';
+// import React from "react";
 import { motion } from 'framer-motion';
-import { Check, Users, Tractor, Star, MapPin, Leaf, Sun, Droplets, Wheat, Wind } from 'lucide-react';
+import {  Users, Tractor, Star,Leaf, Sun, Droplets, Wheat, Wind } from 'lucide-react';
 
 const About = () => {
   // Animation variants
@@ -44,6 +44,10 @@ const About = () => {
       }
     }
   };
+
+    //  useEffect(() => {
+    //     window.scrollTo(0, 0);
+    //   }, []);
 
   return (
     <section id="about" className="py-24 bg-gradient-to-b from-white to-green-50">

@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { services } from '../content/Services';
-import { ArrowRight, Users, Lightbulb, Clock, ChevronRight } from 'lucide-react';
+import { ArrowRight, Users, Lightbulb, Clock, ChevronRight, ChevronLeft } from 'lucide-react';
 
 const ServiceDetail: React.FC = () => {
+  
   const url = new URL(window.location.href);
   const params = new URLSearchParams(url.search);
   const id = params.get('id');
@@ -128,6 +129,40 @@ const ServiceDetail: React.FC = () => {
           <p className="text-gray-700 leading-relaxed whitespace-pre-line">
             {service.howItWorks}
           </p>
+        </div>
+        <div>
+
+        </div>
+        <div className='flex justify-between items-center gap-4'>
+          <button className="bg-red-600 text-white px-6 py-3 rounded-full font-medium hover:bg-green-700 transition-all duration-300 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
+          onClick={()=>{
+            if(service.id > 1){
+              window.location.href = `/service?id=${service.id - 1}`;
+            }
+          }}
+          disabled={service.id === 1}
+          >
+            <ChevronLeft className="ml-2" size={18} />
+           
+            
+              Previous
+              
+            
+          </button>
+          <button className="bg-green-600 text-white px-6 py-3 rounded-full font-medium hover:bg-green-700 transition-all duration-300 flex justify-center items-center disabled:opacity-50 disabled:cursor-not-allowed"
+          onClick={()=>{
+            if(service.id < services.length){
+              window.location.href = `/service?id=${service.id + 1}`;
+            }
+          }}
+          disabled={service.id === services.length}
+          >
+            
+              Next
+              <ChevronRight className="ml-2" size={18} />
+           
+          </button>
+
         </div>
 
         {/* Contact CTA */}

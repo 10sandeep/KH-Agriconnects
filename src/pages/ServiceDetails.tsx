@@ -8,8 +8,6 @@ const ServiceDetail: React.FC = () => {
   const params = new URLSearchParams(url.search);
   const id = params.get('id');
   const service = services.find((service) => service.id.toString() === id);
-
-  // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

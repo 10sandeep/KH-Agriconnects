@@ -550,13 +550,13 @@ const Contact: React.FC = () => {
                       className="text-gray-600 mb-1 hover:text-green-700 transition-colors duration-300"
                       whileHover={{ x: 5 }}
                     >
-                      <a href="tel:+916815222999">+91 6815 222 999</a>
+                      <a href="tel:+916815222999">+91 7075002000</a>
                     </motion.p>
                     <motion.p 
                       className="text-gray-600 hover:text-green-700 transition-colors duration-300"
                       whileHover={{ x: 5 }}
                     >
-                      <a href="tel:+916815222888">+91 6815 222 888</a>
+                      <a href="tel:+916815222888">+91 9908691093</a>
                     </motion.p>
                   </div>
                 </motion.div>

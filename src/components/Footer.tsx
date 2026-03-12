@@ -114,7 +114,7 @@ const Footer = () => {
             {/* Email */}
             <li className="flex items-center">
               <Mail size={20} className="mr-2 text-green-500 flex-shrink-0" />
-              <span className="text-gray-300">info@khagriconnects.org</span>
+              <span className="text-gray-300">khagriconnect@gmail.com</span>
             </li>
 
             {/* Phone */}

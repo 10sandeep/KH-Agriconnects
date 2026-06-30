@@ -15,7 +15,7 @@ import LoadingScreen from './components/LoadingScreen';
 // HomePage component
 const HomePage = () => {
   useEffect(() => {
-    document.title = 'KH Agriconnects | Agricultural Services';
+    document.title = 'NexKorla Agritech | Agricultural Services';
   }, []);
 
   return (
@@ -31,7 +31,7 @@ const HomePage = () => {
 // Team page component
 const TeamPage = () => {
   useEffect(() => {
-    document.title = 'Our Team | KH Agriconnects';
+    document.title = 'Our Team | NexKorla Agritech';
   }, []);
 
   return (
@@ -44,7 +44,7 @@ const TeamPage = () => {
 // Service Enrollment page component
 const ServiceEnrollPage = () => {
   useEffect(() => {
-    document.title = 'Service Enrollment | KH Agriconnects';
+    document.title = 'Service Enrollment | NexKorla Agritech';
   }, []);
 
   return (

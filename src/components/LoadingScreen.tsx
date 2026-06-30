@@ -14,7 +14,7 @@ const LoadingScreen: React.FC = () => {
           <div className="absolute inset-0 flex items-center justify-center">
             <img
               src={logo}
-              alt="KH Agriconnect Logo"
+              alt="NexKorla Agritech Logo"
               className="w-16 h-16 object-contain"
             />
           </div>
@@ -22,7 +22,7 @@ const LoadingScreen: React.FC = () => {
 
         {/* Text */}
         <h2 className="text-green-700 text-2xl font-bold tracking-widest animate-pulse">
-          KH AGRICONNECT
+          NexKorla Agritech
         </h2>
       </div>
     </div>

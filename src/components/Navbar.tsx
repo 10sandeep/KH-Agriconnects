@@ -104,13 +104,11 @@ const Navbar: React.FC = () => {
           {/* Logo Section - left column (spans 3 columns on lg) */}
           <div className="col-span-6 lg:col-span-3">
            <Link to="/" className="group flex items-center space-x-3 relative">
-  <div className={`relative w-20 h-14 p-1 rounded-md transition-all duration-300 ${
-    isScrolled ? `${theme.iconBg} ${theme.borderColor} border` : 'bg-white/20 backdrop-blur-sm'
-  }`}>
-    <img 
-      src={LOGO} 
-      alt="KH Agriconnect Logo" 
-      className="object-contain w-full h-full" 
+  <div className="relative w-36 h-20">
+    <img
+      src={LOGO}
+      alt="NexKorla Agritech Logo"
+      className="object-contain w-full h-full"
     />
   </div>
 </Link>

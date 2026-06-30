@@ -17,7 +17,7 @@ const Testimonials: React.FC = () => {
       name: "Rajesh Kumar",
       role: "Rice Farmer",
       location: "Odisha",
-      content: "KH Agriconnects' machinery hiring service has been a game-changer for my 15-acre rice farm. I was able to use modern harvesters during peak season without the financial burden of ownership. Their team provided excellent support and training on equipment operation.",
+      content: "NexKorla Agritech's machinery hiring service has been a game-changer for my 15-acre rice farm. I was able to use modern harvesters during peak season without the financial burden of ownership. Their team provided excellent support and training on equipment operation.",
       image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
     },
     {
@@ -25,7 +25,7 @@ const Testimonials: React.FC = () => {
       name: "Anita Patel",
       role: "Organic Vegetable Grower",
       location: "Gujarat",
-      content: "The agricultural consultancy from KH Agriconnects helped me transition to organic farming practices. Their expert guidance on soil health management and natural pest control methods has increased my yield and the premium I can charge for my produce.",
+      content: "The agricultural consultancy from NexKorla Agritech helped me transition to organic farming practices. Their expert guidance on soil health management and natural pest control methods has increased my yield and the premium I can charge for my produce.",
       image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
     },
     {
@@ -33,7 +33,7 @@ const Testimonials: React.FC = () => {
       name: "Sunil Verma",
       role: "Agri-entrepreneur",
       location: "Maharashtra",
-      content: "After completing the agri-tech training program, I started my own agricultural services business. The practical skills and business knowledge I gained were invaluable. KH Agriconnects didn't just teach me farming; they showed me how to build a sustainable enterprise.",
+      content: "After completing the agri-tech training program, I started my own agricultural services business. The practical skills and business knowledge I gained were invaluable. NexKorla Agritech didn't just teach me farming; they showed me how to build a sustainable enterprise.",
       image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
     }
   ];

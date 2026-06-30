@@ -25,7 +25,7 @@ export const services: Service[] = [
     image: PICTURE1,
     tagline:"Empowering farmers with access to modern tools without the burden of ownership.",
     overview:
-      "KH AGRICONNECT enables farmers to hire any farm equipment on a need basis, helping them reduce capital expenditure and increase operational efficiency.",
+      "NexKorla Agritech enables farmers to hire any farm equipment on a need basis, helping them reduce capital expenditure and increase operational efficiency.",
     whyItMatters:
       "Small and marginal farmers often cannot afford advanced equipment. Our service democratizes access to modern mechanization, increasing productivity and reducing labor dependency.",
     whoItsFor: [
@@ -44,7 +44,7 @@ export const services: Service[] = [
     image: PICTURE2,
     tagline :"Collaborative farming for assured returns and sustainable land use.",
     overview:
-      "KH AGRICONNECT offer structured and secure contract farming models that incorporate mechanized cultivation of suitable crops, tailored to the specific area and resource availability. Our approach ensures assured returns for landowners and optimized, consistent production for buyers.",
+      "NexKorla Agritech offer structured and secure contract farming models that incorporate mechanized cultivation of suitable crops, tailored to the specific area and resource availability. Our approach ensures assured returns for landowners and optimized, consistent production for buyers.",
     whyItMatters:
       "Unutilized or mismanaged land leads to revenue loss. Our contract farming brings in technology, best practices, and assured returns.",
     whoItsFor: [
@@ -53,7 +53,7 @@ export const services: Service[] = [
       "Institutions managing large plots",
     ],
     howItWorks:
-      "We enter a legal agreement with the landowner. KH AGRICONNECT provides end-to-end operations including crop planning and input management as well as labor.",
+      "We enter a legal agreement with the landowner. NexKorla Agritech provides end-to-end operations including crop planning and input management as well as labor.",
   },
   {
     id: 3,
@@ -61,7 +61,7 @@ export const services: Service[] = [
     image: PICTURE3,
     tagline:"Equipping rural youth and farmers with future-ready agri-tech skills.",
     overview:
-      "KH AGRICONNECT offer short-term and long-term training programs focused on emerging agricultural technologies, farm machinery operations, and digital farming.",
+      "NexKorla Agritech offer short-term and long-term training programs focused on emerging agricultural technologies, farm machinery operations, and digital farming.",
     whyItMatters:
       "The future of farming is high-tech. Without skilled manpower, India risks falling behind in smart agriculture adoption.",
     whoItsFor: [
@@ -78,7 +78,7 @@ export const services: Service[] = [
     image: PICTURE4,
     tagline:"Guiding farmers and agri-entrepreneurs to choose the right tools for maximum yield.",
     overview:
-      "KH agriconnect  assist individuals in selecting the most suitable machinery for specific tasks that require mechanized solutions",
+      "NexKorla Agritech  assist individuals in selecting the most suitable machinery for specific tasks that require mechanized solutions",
     whyItMatters:
       "Wrong equipment choices lead to losses, downtime, and low productivity. Our advisory ensures every rupee spent delivers results.",
     whoItsFor: [
@@ -95,7 +95,7 @@ export const services: Service[] = [
     image: PICTURE5,
     tagline:"Customized innovations designed to solve specific, need-based problems of farmers.",
     overview:
-      "KH AGRICONNECT develop custom machinery solutions when standard equipment doesn't fit unique farm needs, and also provide necessary modifications to existing commercial machines as per farmer specifications.",
+      "NexKorla Agritech develop custom machinery solutions when standard equipment doesn't fit unique farm needs, and also provide necessary modifications to existing commercial machines as per farmer specifications.",
     whyItMatters:
       "Many commercially available machines do not perform efficiently across all regions due to local variations. To ensure optimal performance, selected machines are customized with necessary modifications. Indian farms often require context-specific tools, as imported machinery may not suit local farming conditions",
     whoItsFor: [
@@ -112,7 +112,7 @@ export const services: Service[] = [
     image: PICTURE6,
     tagline:"Connecting producers to markets.",
     overview:
-      "KH AgriConnect acts as a trusted transparency platform that connects verified sellers with genuine buyers of agricultural produce, machinery, and agri-inputs. We ensure fair pricing and help farmers access the Minimum Support Price (MSP) wherever applicable.",
+      "NexKorla Agritech acts as a trusted transparency platform that connects verified sellers with genuine buyers of agricultural produce, machinery, and agri-inputs. We ensure fair pricing and help farmers access the Minimum Support Price (MSP) wherever applicable.",
     whyItMatters:
       "Middlemen often reduce farmer profits. A trusted platform ensures farmers get the right price and buyers get assured quality.",
     whoItsFor: [
@@ -122,7 +122,7 @@ export const services: Service[] = [
       "Agri-input companies",
     ],
     howItWorks:
-      "We aggregate listings of produce and agri-resources, verify both parties, facilitate negotiations, and offer logistics support if needed. Farmers and stakeholders can connect with KH AgriConnect through a simple phone call or by enrolling via our official website.",
+      "We aggregate listings of produce and agri-resources, verify both parties, facilitate negotiations, and offer logistics support if needed. Farmers and stakeholders can connect with NexKorla Agritech through a simple phone call or by enrolling via our official website.",
   },
   {
     id: 7,
@@ -130,15 +130,15 @@ export const services: Service[] = [
     image: PICTURE7,
     tagline:"Procuring Premium Indian Produce for International Buyers.",
     overview:
-      "KH AgriConnect ensures timely procurement of export-quality agricultural produce directly from farmers. By bridging the gap between farms and global markets, we reduce post-harvest losses and enhance farmer incomes.",
+      "NexKorla Agritech ensures timely procurement of export-quality agricultural produce directly from farmers. By bridging the gap between farms and global markets, we reduce post-harvest losses and enhance farmer incomes.",
     whyItMatters:
-      "A significant portion of export-quality agricultural produce goes to waste due to delayed actions, poor post-harvest handling, and inadequate cold storage infrastructure. KH AgriConnect addresses this challenge by ensuring timely procurement of premium agri-products, preserving their quality and maximizing their export potential",
+      "A significant portion of export-quality agricultural produce goes to waste due to delayed actions, poor post-harvest handling, and inadequate cold storage infrastructure. NexKorla Agritech addresses this challenge by ensuring timely procurement of premium agri-products, preserving their quality and maximizing their export potential",
     whoItsFor: [
       "Organic Farmers",
       "Producers of Export-Grade Agricultural Commodities",
       "GHigh-Value Commercial Crop Growers",
     ],
     howItWorks:
-      "KH Agriconnect collaborates with farmers to identify export-quality produce at the right time. We ensure timely procurement and maintain quality through efficient logistics and cold storage. The produce is then linked to international markets, reducing waste and maximizing value.",
+      "NexKorla Agritech collaborates with farmers to identify export-quality produce at the right time. We ensure timely procurement and maintain quality through efficient logistics and cold storage. The produce is then linked to international markets, reducing waste and maximizing value.",
   },
 ];

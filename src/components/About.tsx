@@ -78,7 +78,7 @@ const About = () => {
             className="text-5xl pb-5 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-800 to-green-500"
             variants={itemVariants}
           >
-            About KH Agriconnect
+            About NexKorla Agritech
           </motion.h2>
           
           <motion.div 
@@ -162,7 +162,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              KH AGRICONNECT is built on a simple but powerful idea: <span className="font-semibold text-green-800">every farmer deserves access</span> to the farm implements and markets they need to thrive for sustainable farming. As an LLP founded by passionate Farm Mech innovators and backed by extensive field experience, we integrate farm mechanization, capacity building, technology adoption, and global market access under one unified platform.
+              NexKorla Agritech is built on a simple but powerful idea: <span className="font-semibold text-green-800">every farmer deserves access</span> to the farm implements and markets they need to thrive for sustainable farming. As an LLP founded by passionate Farm Mech innovators and backed by extensive field experience, we integrate farm mechanization, capacity building, technology adoption, and global market access under one unified platform.
             </motion.p>
             
             <motion.p 

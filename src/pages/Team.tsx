@@ -5,7 +5,6 @@ import LEAD2 from "../assets/NANDA SIR .jpg";
 import FOUNDER from "../assets/Harshavardhan sir.jpg";
 import CEO from "../assets/Prasant Sir.jpg";
 import TECHNICAL from "../assets/Sai Kiran sir.jpg";
-import SENIOROP from "../assets/Sai sir.jpg";
 const Team = () => {
   const [hoveredMember, setHoveredMember] = useState(null);
 
@@ -14,8 +13,8 @@ const Team = () => {
 
   const teamMembers = [
     {
-      name: "Dr. Harshavardhan",
-      role: " Proprietor cum Founder",
+      name: "Dr. Korla Harshavardhan",
+      role: "Founder and CEO",
       image: FOUNDER,
       bio: "NULL",
       linkedin: "https://linkedin.com",
@@ -23,7 +22,7 @@ const Team = () => {
     },
     {
       name: "Dr. Ravuri Sai Prasanth",
-      role: "CEO",
+      role: "Co Founder and Managing Director",
       image: CEO,
       bio: "NULL",
       linkedin: "https://linkedin.com",
@@ -36,14 +35,6 @@ const Team = () => {
       bio: "NULL",
       linkedin: "https://linkedin.com",
       email: "santosh@khagriconnects.org",
-    },
-    {
-      name: "Mr. Ramakrishna",
-      role: "Senior Farm Equipment Operator",
-      image: SENIOROP,
-      bio: "NULL",
-      linkedin: "https://linkedin.com",
-      email: "nanda@khagriconnects.org",
     },
     {
       name: "Prof. D.N. Rao ",

@@ -584,7 +584,7 @@ const Contact: React.FC = () => {
                       className="text-gray-600 mb-1 hover:text-green-700 transition-colors duration-300"
                       whileHover={{ x: 5 }}
                     >
-                      <a href="mailto:info@khagriconnects.org">khagriconnect@gmail.com</a>
+                      <a href="mailto:nexkorlaagritech@gmail.com">nexkorlaagritech@gmail.com</a>
                     </motion.p>
                    
                   </div>

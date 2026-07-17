@@ -68,6 +68,14 @@ const Team = () => {
       linkedin: "https://linkedin.com",
       email: "sharmistha@khagriconnects.org",
     },
+    {
+      name: "Prof.(Dr). Eshwar Reddy",
+      role: "Lead Advisor",
+      image: placeholderImage,
+      bio: "NULL",
+      linkedin: "https://linkedin.com",
+      email: "eshwarreddy@khagriconnects.org",
+    },
   ];
 
      useEffect(() => {

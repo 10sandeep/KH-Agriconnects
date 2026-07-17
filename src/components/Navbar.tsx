@@ -92,11 +92,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
-          ? 'bg-gray-900/95 backdrop-blur-lg shadow-lg shadow-black/20 py-3'
-          : 'bg-black/50 backdrop-blur-sm py-5'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white/80 backdrop-blur-lg shadow-sm py-3"
     >
       <div className="container mx-auto px-6">
         {/* Three-column layout: Logo | Nav | Mobile Menu Button */}
@@ -117,9 +113,7 @@ const Navbar: React.FC = () => {
 
           {/* Desktop Navigation - center column (spans 6 columns on lg) */}
           <div className="hidden lg:col-span-6 lg:flex justify-center items-center">
-            <div className={`flex space-x-1 rounded-full transition-all duration-300 py-1 px-2 ${
-              isScrolled ? 'bg-white/5' : 'bg-white/10 backdrop-blur-sm'
-            }`}>
+            <div className="flex space-x-1 rounded-full py-1 px-2">
               <NavItem to={isHomePage ? "#home" : "/"} label="Home" isScrolled={isScrolled} theme={theme} />
               <NavItem to={isHomePage ? "#about" : "/#about"} label="About" isScrolled={isScrolled} theme={theme} />
               <NavItem to={isHomePage ? "#services" : "/#services"} label="Services" isScrolled={isScrolled} theme={theme} />
@@ -133,14 +127,14 @@ const Navbar: React.FC = () => {
           {/* Mobile Navigation Toggle - right column (spans 3 columns on lg) */}
           <div className="col-span-6 lg:col-span-3 flex justify-end">
             <button
-              className="lg:hidden focus:outline-none p-2 rounded-full transition-all duration-300 bg-white/10 hover:bg-white/20"
+              className="lg:hidden focus:outline-none p-2 rounded-full transition-all duration-300 hover:bg-gray-100"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
             >
               {isOpen ? (
-                <X size={24} className="text-white" />
+                <X size={24} className="text-gray-700" />
               ) : (
-                <Menu size={24} className="text-white" />
+                <Menu size={24} className="text-gray-700" />
               )}
             </button>
           </div>
@@ -153,7 +147,7 @@ const Navbar: React.FC = () => {
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="shadow-xl bg-gray-900 border-t border-white/10">
+        <div className="shadow-xl bg-white/90 backdrop-blur-lg border-t border-gray-100">
           <div className="container mx-auto px-4 py-3">
             <div className="grid grid-cols-2 gap-3">
               <MobileNavItem to={isHomePage ? "#home" : "/"} label="Home" onClick={() => setIsOpen(false)} theme={theme} />
@@ -191,7 +185,7 @@ interface NavItemProps {
 const NavItem: React.FC<NavItemProps> = ({ to, label, isScrolled, theme }) => (
   <Link
     to={to}
-    className="font-medium whitespace-nowrap transition-all duration-300 px-4 py-2 rounded-full text-gray-200 hover:text-white hover:bg-white/15"
+    className="font-medium whitespace-nowrap transition-all duration-300 px-4 py-2 rounded-full text-gray-700 hover:text-green-700 hover:bg-green-50"
   >
     {label}
   </Link>
@@ -217,7 +211,7 @@ interface MobileNavItemProps {
 const MobileNavItem: React.FC<MobileNavItemProps> = ({ to, label, onClick, theme }) => (
   <Link
     to={to}
-    className="flex items-center justify-center text-center text-gray-200 hover:text-white font-medium transition-all duration-300 py-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10"
+    className="flex items-center justify-center text-center text-gray-700 hover:text-green-700 font-medium transition-all duration-300 py-3 rounded-lg bg-gray-50 hover:bg-green-50 border border-gray-100"
     onClick={onClick}
   >
     {label}

@@ -183,7 +183,7 @@ const PrecisionImaging: React.FC = () => {
             NexKorla Agritech delivers scientific crop intelligence using drone-mounted imaging systems integrated with AI,
             GIS and precision agriculture analytics.
           </p>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-x-3 gap-y-4">
             {subServices.map((s) => (
               <a
                 key={s.id}

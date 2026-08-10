@@ -5,11 +5,13 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
+import PrecisionImagingSection from './components/PrecisionImagingSection';
 import Team from './pages/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ServiceDetail from './pages/ServiceDetails';
 import ServiceEnroll from './pages/AgriculturalServiceEnrollment';
+import PrecisionImaging from './pages/PrecisionImaging';
 import LoadingScreen from './components/LoadingScreen';
 
 // HomePage component
@@ -23,6 +25,7 @@ const HomePage = () => {
       <Hero />
       <About />
       <Services />
+      <PrecisionImagingSection />
       <Contact />
     </div>
   );
@@ -77,6 +80,7 @@ function App() {
             <Route path="/team" element={<TeamPage />} />
             <Route path="/serviceEnrollment" element={<ServiceEnrollPage />} />
             <Route path="/service" element={<ServiceDetail />} />
+            <Route path="/precision-imaging" element={<PrecisionImaging />} />
           </Routes>
         </main>
         <Footer />

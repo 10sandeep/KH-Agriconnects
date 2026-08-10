@@ -107,7 +107,7 @@ const Navbar: React.FC = () => {
 
                 {dropdownOpen && (
                   <div
-                    className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 bg-white rounded-2xl shadow-xl border border-gray-100 py-2 z-50"
+                    className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-80 bg-white rounded-2xl shadow-xl border border-gray-100 py-2 z-50"
                     onMouseLeave={() => setDropdownOpen(false)}
                   >
                     <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider px-4 py-2">Sub-services</p>
@@ -115,12 +115,12 @@ const Navbar: React.FC = () => {
                       <button
                         key={id}
                         onClick={() => goToPrecision(id)}
-                        className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-150"
+                        className="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors duration-150 text-left"
                       >
                         <div className="w-7 h-7 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0">
                           <Icon size={14} className="text-green-600" />
                         </div>
-                        {label}
+                        <span className="whitespace-nowrap">{label}</span>
                       </button>
                     ))}
                     <div className="border-t border-gray-100 mt-2 pt-2 px-4 pb-1">

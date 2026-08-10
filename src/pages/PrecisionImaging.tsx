@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import {
   Scan, Brain, FlaskConical, Leaf, Building2, Satellite,
   ChevronRight, CheckCircle2, Users, Package, Layers,
@@ -141,8 +141,6 @@ const sectorSolutions = [
 ];
 
 const PrecisionImaging: React.FC = () => {
-  const [activeSection, setActiveSection] = useState('');
-
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = 'Precision Imaging & Spectral Intelligence | NexKorla Agritech';
@@ -362,12 +360,12 @@ const PrecisionImaging: React.FC = () => {
                 <p className="text-green-300 text-sm font-medium mb-1">Starting from</p>
                 <p className="text-white text-4xl font-extrabold mb-1">Annual</p>
                 <p className="text-gray-400 text-sm mb-4">Subscription Plans</p>
-                <a
-                  href="/#contact"
+                <button
+                  onClick={() => { window.location.href = '/#contact'; }}
                   className="block w-full text-center bg-green-500 hover:bg-green-400 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-200"
                 >
                   Enquire Now
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -378,12 +376,12 @@ const PrecisionImaging: React.FC = () => {
       <div className="text-center py-12 bg-green-50 px-6">
         <h3 className="text-2xl font-bold text-gray-800 mb-3">Ready to unlock spectral insights for your fields?</h3>
         <p className="text-gray-600 mb-6 max-w-xl mx-auto">Talk to our remote sensing team for a custom solution tailored to your crop, region and research goals.</p>
-        <a
-          href="/#contact"
+        <button
+          onClick={() => { window.location.href = '/#contact'; }}
           className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-full transition-all duration-200 shadow-lg shadow-green-600/20"
         >
           Get in Touch <ChevronRight size={18} />
-        </a>
+        </button>
       </div>
     </div>
   );

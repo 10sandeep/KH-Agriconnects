@@ -3,20 +3,20 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 interface ServiceCardProps {
-  // Service id for navigation
-  icon: React.ReactNode;    // Icon component or element
-  title: string;            // Service title
-  description: string;      
-  id: number;               // Short description
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  id: number;
+  customPath?: string;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
-  icon, title, description, id
+  icon, title, description, id, customPath
 }) => {
   const navigate = useNavigate();
-  
+
   const handleLearnMoreClick = () => {
-    navigate(`/service?id=${id}`);  // Navigate to service detail page with service id
+    navigate(customPath ?? `/service?id=${id}`);
   };
 
   // Animation variants
@@ -77,7 +77,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         stiffness: 400, 
         damping: 10,
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: "reverse" as const,
         duration: 0.6
       }
     }

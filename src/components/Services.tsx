@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tractor } from 'lucide-react';
+import { Tractor, Scan } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 import ICON2 from '../assets/Icon2.png'
 import ICON3 from '../assets/Icon3.png'
@@ -12,11 +12,19 @@ interface Service {
   icon: React.ReactNode;
   title: string;
   description: string;
-  id:number;
+  id: number;
+  customPath?: string;
 }
 
 const Services: React.FC = () => {
   const services: Service[] = [
+    {
+      icon: <Scan size={40} className="text-green-700" />,
+      title: "Precision Imaging & Spectral Intelligence",
+      description: "Advanced drone-based multispectral and hyperspectral solutions for agriculture, research and agro-industries — powered by AI, GIS and precision analytics.",
+      id: 0,
+      customPath: '/precision-imaging',
+    },
     {
       icon: <Tractor size={40} className="text-green-700" />,
       title: "Custom hiring services of all agricultural machineries",
@@ -74,12 +82,13 @@ const Services: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <ServiceCard 
+            <ServiceCard
               key={index}
               icon={service.icon}
               title={service.title}
               id={service.id}
               description={service.description}
+              customPath={service.customPath}
             />
           ))}
         </div>
